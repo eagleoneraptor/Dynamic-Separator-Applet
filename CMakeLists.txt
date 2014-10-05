@@ -25,8 +25,8 @@ install(CODE "execute_process(COMMAND ./build.sh WORKING_DIRECTORY ${CMAKE_SOURC
 install (DIRECTORY locale DESTINATION "share" FILES_MATCHING PATTERN "dynamic-separator-applet.mo")
 
 # Install internationalized panel-applet file
-install(CODE "execute_process(COMMAND intltool-merge -d po \"${CMAKE_SOURCE_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in\" \"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in\" WORKING_DIRECTORY ${CMAKE_SOURCE_DIR} OUTPUT_QUIET)")
-install(CODE "configure_file(\"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in\" \"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet\")")
+install(CODE "execute_process(COMMAND intltool-merge -d po \"${CMAKE_SOURCE_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in\" \"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in2\" WORKING_DIRECTORY ${CMAKE_SOURCE_DIR} OUTPUT_QUIET)")
+install(CODE "configure_file(\"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet.in2\" \"${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet\")")
 install(FILES ${CMAKE_BINARY_DIR}/org.gnome.panel.applet.DynamicSeparatorApplet.panel-applet DESTINATION "share/gnome-panel/4.0/applets")
 
 #
