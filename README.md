@@ -26,4 +26,8 @@ on Preferences.
 INSTALLATION
 ------------
 
-(Come back here later)
+Just run this in sequence:
+    cmake .
+    make package
+    sudo dpkg -i dynamic-separator-applet-0.1.0-Linux.deb
+
